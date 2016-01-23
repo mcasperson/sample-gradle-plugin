@@ -1,5 +1,6 @@
 package com.matthewcasperson.plugin
 
+
 import com.matthewcasperson.plugin.services.impl.DesktopApplyPlugins
 import com.matthewcasperson.plugin.services.impl.SharedConfigureMaven
 import com.matthewcasperson.plugin.services.impl.SharedConfigureSonarQube
@@ -13,7 +14,7 @@ class DesktopPlugin implements
         Plugin<Project>,
         DesktopApplyPlugins,
         SharedConfigureMaven,
-        SharedConfigureSonarQube   {
+        SharedConfigureSonarQube {
 
     void apply(Project project) {
         applyPlugins(project);

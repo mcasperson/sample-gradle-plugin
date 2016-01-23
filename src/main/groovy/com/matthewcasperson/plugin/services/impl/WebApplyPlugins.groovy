@@ -9,8 +9,8 @@ import org.gradle.api.Project
 trait WebApplyPlugins implements ApplyPlugins {
     void applyPlugins(Project project) {
         assert project != null;
-        project.applyPlugin('war');
-        project.applyPlugin('maven');
-        project.applyPlugin('sonar-runner');
+        project.plugins.apply('war');
+        project.plugins.apply('maven');
+        project.plugins.apply('sonar-runner');
     }
 }

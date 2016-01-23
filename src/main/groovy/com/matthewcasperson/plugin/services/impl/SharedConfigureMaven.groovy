@@ -9,6 +9,8 @@ import org.gradle.api.Project
 trait SharedConfigureMaven implements ConfigureMaven {
     void configureMaven(Project project) {
         assert project != null;
-        project.repositories.maven.url = 'http://internalmavenrepo';
+        project.repositories.maven {
+            url 'http://internalmavenrepo';
+        }
     }
 }

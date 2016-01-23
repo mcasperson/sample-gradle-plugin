@@ -9,8 +9,8 @@ import org.gradle.api.Project
 trait DesktopApplyPlugins implements ApplyPlugins {
     void applyPlugins(Project project) {
         assert project != null;
-        project.applyPlugin('java');
-        project.applyPlugin('maven');
-        project.applyPlugin('sonar-runner');
+        project.plugins.apply('java');
+        project.plugins.apply('maven');
+        project.plugins.apply('sonar-runner');
     }
 }
